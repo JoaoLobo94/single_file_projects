@@ -6,6 +6,8 @@ wn.title("Pong")
 wn.bgcolor("black")
 wn.setup(width=800, height=600)
 wn.tracer(0)
+if expression:
+    pass
 
 # Score
 score_a = 0
