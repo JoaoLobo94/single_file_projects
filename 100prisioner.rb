@@ -15,10 +15,27 @@ def generator
   end
 end
 
+def sample(n)
+    Hash[to_a.sample(n)]
+end
+
 def random_prisoner
   generator
-  @prisoners.each do |prisoner|
+  correct_number = 0
+  ammount_of_tries = 0
+  ammount_of_opens = 0
 
+  @prisoners.each do |prisoner|
+    @cupboard.each do |drawer|
+        ammount_of_opens += 1
+        if ammount_of_opens <= 50
+            ammount_of_tries += 1
+            if prisoner == drawer.last
+              p correct_number +=1 
+            end
+        end
+    end
+    ammount_of_opens = 0
   end
 end
 
