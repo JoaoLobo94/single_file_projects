@@ -2,7 +2,7 @@
 
 # Karatsuba multiplication
 # two equal even numbers with same length
-require 'pry'
+
 
 def karatsuba(number1, number2)
   return unless number1.positive? && number2.positive?

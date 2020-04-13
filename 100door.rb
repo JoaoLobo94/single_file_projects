@@ -11,7 +11,6 @@ def doorgen
 end
 
 def doorstate
-  first_pass = @door.each do |first_p|
     first_p[1] = if first_p[1] == @arr[0]
                    @arr[1]
                  else
