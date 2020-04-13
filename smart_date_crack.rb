@@ -2,12 +2,6 @@
 
 require 'pry'
 def smart()
-  p "Enter the full pass on your computer of the txt file with the passwords you wish to try first. A list of the world's most common passwords should do"
-  path_to_file = gets.chomp
-  file_data = File.read(path_to_file).split
-  file_data.each do |pass|
-    p pass
-  end
   year = 1910
 
   while year < 2020
