@@ -6,7 +6,6 @@ def smart()
   path_to_file = gets.chomp
   file_data = File.read(path_to_file).split
   file_data.each do |pass|
-    binding.pry
     p pass
   end
   year = 1910
