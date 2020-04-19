@@ -1,3 +1,6 @@
+# Simple Pong in Python 3 for Beginners
+# By @TokyoEdTech
+
 import turtle
 import os
 
@@ -6,8 +9,6 @@ wn.title("Pong")
 wn.bgcolor("black")
 wn.setup(width=800, height=600)
 wn.tracer(0)
-if expression:
-    pass
 
 # Score
 score_a = 0
@@ -123,4 +124,4 @@ while True:
     elif ball.xcor() > 340 and ball.ycor() < paddle_b.ycor() + 50 and ball.ycor() > paddle_b.ycor() - 50:
         ball.dx *= -1
         os.system("afplay bounce.wav&")
-    s
+    
